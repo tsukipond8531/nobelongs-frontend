@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon" />
+      <title>No Belongs</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="assets/css/slick.css" rel="stylesheet">
+      <link href="assets/css/slick-theme.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="nav-top-wrapper">
+               <div class="nav-left-wrapper d-flex">
+                  <div class="btn-toggle">
+                     <img src="assets/img/hamburger.png" alt="">
+                  </div>
+                  <div class="logo">
+                     <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <div class="nav-item">
+                     <ul>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon1.svg" alt="">サービス管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon2.svg" alt=""><span class="notification-sms">1</span> 受注管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon3.svg" alt="">顧客管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon4.svg" alt="">データ分析</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon5.svg" alt="">売上管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon6.svg" alt="">販促管理</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="nav-right">
+                  <div class="nav-right-switch">
+                     <input type="checkbox" hidden="hidden" id="username">
+                     <label class="switch" for="username"></label>
+                     <a href="#">クライアントモードへの切替</a>
+                  </div>
+                  <div class="nav-right-socal-icon">
+                     <ul class="d-flex">
+                        <li><a href="#" class="search-header-top"><img src="assets/img/search.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon1.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon2.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon3.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-admin.png" alt=""></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-bottom-wrapper">
+               <ul>
+                  <li class="active"><a href="#">サービスを探す</a></li>
+                  <li><a href="#">フリーランスを探す</a></li>
+                  <li><a href="#">アートボード</a></li>
+                  <li><a href="#">ショップ</a></li>
+               </ul>
+               <div class="header-search">
+                  <input type="text" placeholder="キーワードで検索">
+                  <input type="submit">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="right-body-wrapper">
+         <div class="container">
+            <div class="row">
+               <!-- menu -->
+               <div class="col-md-12">
+                  <div class="breadcrumbs-wrapper">
+                     <ul class="d-flex">
+                        <li><a href="#">TOP</a></li>
+                        <li>></li>
+                        <li>サービス管理</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 side-ber">
+                  <div class="toggle-backgroung">
+                     <div class="image-close">
+                        <img src="assets/img/close-btn.png" alt="">
+                     </div>
+                  </div>
+                  <div class="silde-bar-menu--wrapper">
+                     <div class="silde-bar-menu--info text-center">
+                        <div class="user-address">
+                           <div class="avatar-upload">
+                              <div class="avatar-edit">
+                                 <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                              </div>
+                              <div class="avatar-preview">
+                                 <div id="imagePreview" style="background-image: url(assets/img/user-image.png);">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-left-item">
+                              <p>坂倉　啓太</p>
+                              <label for="imageUpload">プロフィールの編集 <img src="assets/img/edit-blue.png" alt=""></label>
+                           </div>
+                        </div>
+                        <ul class="d-flex admin-item">
+                           <li>販売実績 <span>100件</span></li>
+                           <li>評価 <span class="color-yell"><img src="assets/img/yellow-star.png" alt=""> 4.9 </span>(87)</li>
+                           <li>フォロワー <span>100人</span></li>
+                           <li>フォロー <span>100人</span></li>
+                        </ul>
+                        <div class="ranking-about">
+                           <div class="d-flex">
+                              <img src="assets/img/gold.png" alt="">
+                              <p>ゴールドランク</p>
+                           </div>
+                           <a href="#">ランキングについて</a>
+                        </div>
+                     </div>
+                     <!-- menu -->
+                     <div class="main-manu-sideber">
+                        <p>エージェントメニュー</p>
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item1.svg" alt=""></span> 出品者ダッシュボード</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon1.svg" alt=""></span> サービス管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon2.svg" alt=""></span> 受注管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon3.svg" alt=""></span> 顧客管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon4.svg" alt=""></span> データ分析</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon5.svg" alt=""></span> 売上管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item2.svg" alt=""></span> チャットルーム</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item3.svg" alt=""></span> スケジュール管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon6.svg" alt=""></span> 販促管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item4.svg" alt=""></span> アートルーム管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item5.svg" alt=""></span> ショップ管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item6.svg" alt=""></span> 広告管理</a></li>
+                        </ul>
+                     </div>
+                     <div class="main-manu-sideber m-top-25">
+                        <p>エージェントメニュー</p>
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item1.svg" alt=""></span> 出品者ダッシュボード</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon1.svg" alt=""></span> サービス管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon2.svg" alt=""></span> 受注管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon3.svg" alt=""></span> 顧客管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/manu-love.svg" alt=""></span> お気に入り</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item2.svg" alt=""></span> チャットルーム</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item3.svg" alt=""></span> スケジュール管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon6.svg" alt=""></span> 販促管理</a></li>
+                        </ul>
+                     </div>
+                     <div class="nav-right-switch">
+                        <input type="checkbox" hidden="hidden" id="manu">
+                        <label class="switch" for="manu"></label>
+                        <a href="#">クライアントモードへの切替</a>
+                     </div>
+                     <div class="main-manu-sideber manu-admin-section">
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/setting.svg" alt=""></span> 設定</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/logout.svg" alt=""></span> ログアウト</a></li>
+                        </ul>
+                     </div>
+                     <!-- menu end -->
+                  </div>
+               </div>
+               <!-- menu end -->
+               <div class="col-lg-8">
+                  <!-- right-side-section -->
+                  <div class="right-section-heading d-flex">
+                     <h4>サービス管理</h4>
+                     <a href="#">サービスを出品する ></a>
+                  </div>
+                  <div class="colm-wrapper-all">
+                     <h3>取引中の案件 5件</h3>
+                     <!-- desktop none -->
+                     <div class="responsiv-content-right">
+                        <div class="responsiv-content-right--wrapper">
+
+                           <div class="responsiv-content-item">
+                              <div class="responsiv-content-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                              </div>
+                              <p class="img-content">あなたの想いをデザインに <br> 会社用ロゴ作成します</p>
+                              <div class="d-flex responsiv-content-btm">
+                                 <p>所用期間</p>
+                                 <p>1〜2ヶ月</p>
+                                 <div class="switch switch-all-table">
+                                    <input type="checkbox" class="ad-on">
+                                    <label></label>
+                                    <span></span>
+                                </div> 
+                              </div>
+                           </div>
+                           <div class="responsiv-content-item">
+                              <div class="responsiv-content-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                              </div>
+                              <p class="img-content">あなたの想いをデザインに <br> 会社用ロゴ作成します</p>
+                              <div class="d-flex responsiv-content-btm">
+                                 <p>所用期間</p>
+                                 <p>1〜2ヶ月</p>
+                                 <div class="switch switch-all-table">
+                                    <input type="checkbox" class="ad-on">
+                                    <label></label>
+                                    <span></span>
+                                </div> 
+                              </div>
+                           </div>
+                           <div class="responsiv-content-item">
+                              <div class="responsiv-content-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                              </div>
+                              <p class="img-content">あなたの想いをデザインに <br> 会社用ロゴ作成します</p>
+                              <div class="d-flex responsiv-content-btm">
+                                 <p>所用期間</p>
+                                 <p>1〜2ヶ月</p>
+                                 <div class="switch switch-all-table">
+                                    <input type="checkbox" class="ad-on">
+                                    <label></label>
+                                    <span></span>
+                                </div> 
+                              </div>
+                           </div>
+                           <div class="responsiv-content-item">
+                              <div class="responsiv-content-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                              </div>
+                              <p class="img-content">あなたの想いをデザインに <br> 会社用ロゴ作成します</p>
+                              <div class="d-flex responsiv-content-btm">
+                                 <p>所用期間</p>
+                                 <p>1〜2ヶ月</p>
+                                 <div class="switch switch-all-table">
+                                    <input type="checkbox" class="ad-on">
+                                    <label></label>
+                                    <span></span>
+                                </div> 
+                              </div>
+                           </div>
+                          
+                        </div>
+                     </div>
+                     <!-- desktop none end -->
+                     <div class="table-right-progress">
+                        <table>
+                           <tr>
+                              <th>出品内容</th>
+                              <th>金額</th>
+                              <th>所用期間</th>
+                              <th>ステータス</th>
+                              <th>公開状況</th>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div class="d-flex tab-img-text">
+                                    <img src="assets/img/table-image.png" alt="">
+                                    <p>あなたの想いをデザインに <br>
+                                        会社用ロゴ作成します
+                                    </p>
+                                 </div>
+                              </td>
+                              <td class="font-12">30,000円</td>
+                              <td class="font-color">
+                                1〜2ヶ月
+                              </td>
+                              <td class="font-12">進行中</td>
+                              <td>
+                                 <div class="switch switch-all-table">
+                                    <input type="checkbox" class="ad-on">
+                                    <label></label>
+                                    <span></span>
+                                </div> 
+                              </td>
+                           </tr>
+                           <tr>
+                            <td>
+                               <div class="d-flex tab-img-text">
+                                  <img src="assets/img/table-image.png" alt="">
+                                  <p>あなたの想いをデザインに <br>
+                                      会社用ロゴ作成します
+                                  </p>
+                               </div>
+                            </td>
+                            <td class="font-12">10,000円</td>
+                            <td class="font-color">
+                              1〜2週間
+                            </td>
+                            <td class="font-12">進行中</td>
+                            <td>
+                              <div class="switch switch-all-table">
+                                 <input type="checkbox" class="ad-on">
+                                 <label></label>
+                                 <span></span>
+                             </div> 
+                            </td>
+                         </tr>
+                         <tr>
+                            <td>
+                               <div class="d-flex tab-img-text">
+                                  <img src="assets/img/table-image.png" alt="">
+                                  <p>あなたの想いをデザインに <br>
+                                      会社用ロゴ作成します
+                                  </p>
+                               </div>
+                            </td>
+                            <td class="font-12">60,000円</td>
+                            <td class="font-color">
+                              1〜2ヶ月
+                            </td>
+                            <td class="font-12">進行中</td>
+                            <td>
+                              <div class="switch switch-all-table">
+                                 <input type="checkbox" class="ad-on">
+                                 <label></label>
+                                 <span></span>
+                             </div> 
+                            </td>
+                         </tr>
+                         <tr>
+                           <td>
+                              <div class="d-flex tab-img-text">
+                                 <img src="assets/img/table-image.png" alt="">
+                                 <p>あなたの想いをデザインに <br>
+                                     会社用ロゴ作成します
+                                 </p>
+                              </div>
+                           </td>
+                           <td class="font-12">60,000円</td>
+                           <td class="font-color">
+                             1〜2ヶ月
+                           </td>
+                           <td class="font-12">進行中</td>
+                           <td>
+                             <div class="switch switch-all-table">
+                                <input type="checkbox" class="ad-on">
+                                <label></label>
+                                <span></span>
+                            </div> 
+                           </td>
+                        </tr>
+                         <tr class="show-more">
+                            <td>
+                               <div class="d-flex tab-img-text">
+                                  <img src="assets/img/table-image.png" alt="">
+                                  <p>あなたの想いをデザインに <br>
+                                      会社用ロゴ作成します
+                                  </p>
+                               </div>
+                            </td>
+                            <td class="font-12">￥30,000</td>
+                            <td class="font-color">
+                              1〜２ヶ月
+                            </td>
+                            <td class="font-12">進行中</td>
+                            <td class="text-center">
+                              <!--  -->
+                              <div class="switch switch-all-table">
+                                 <input type="checkbox" class="ad-on">
+                                 <label></label>
+                                 <span></span>
+                             </div> 
+                              <!--  -->
+                            </td>
+                         </tr>
+                
+                       
+                        </table>
+                     </div>
+                     <a href="javascript:void(0)" class="read-more">その他のお知らせを表示する</a>
+                  </div>
+                  <!-- right-side-section end -->
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="container">
+            <div class="fooetr-section">
+               <div class="footer-logo">
+                  <img src="assets/img/footer-logo.png" alt="">
+               </div>
+               <div class="fooetr-top-section">
+                  <div class="main">
+                     <div class="accordion">
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>企業情報</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">NoBelongsについて</a></li>
+                              <li><a href="#">会社概要</a></li>
+                              <li><a href="#">採用情報</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>ご利用の方へ</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>サポート</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">ご利用ガイド</a></li>
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>フリーランス</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">＊＊＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-socal-address">
+                           <h3 class="title">
+                              <span>アプリ</span>
+                           </h3>
+                           <ul class="socal-item">
+                              <li><a href="#"><img src="assets/img/iphon-stor.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/google-stor.png" alt=""></a></li>
+                           </ul>
+                           <ul class="footer-socal-item">
+                              <li><a href="#"><img src="assets/img/footer-icon1.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon2.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon3.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon4.png" alt=""></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="coppyright-wrapper">
+               <ul>
+                  <li><a href="#">ご利用規約</a></li>
+                  <li><a href="#">プライバシーポリシー</a></li>
+                  <li><a href="#">特商法に基づく表記</a></li>
+                  <li><a href="#">資金決済法に基づく表示</a></li>
+                  <li><a href="#">コンプライアンスポリシー</a></li>
+               </ul>
+               <div class="text-center">
+                  <a href="#" class="copptright-titel">©︎2021-2022 NoBelongs</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- -------------------- -->
+      <script src='assets/js/jquery.min.js'></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/custom.js"></script>
+
+      <script>
+      
+
+      </script>
+   </body>
+</html>
