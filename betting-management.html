@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon" />
+      <title>No Belongs</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="assets/css/slick.css" rel="stylesheet">
+      <link href="assets/css/slick-theme.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="nav-top-wrapper">
+               <div class="nav-left-wrapper d-flex">
+                  <div class="btn-toggle">
+                     <img src="assets/img/hamburger.png" alt="">
+                  </div>
+                  <div class="logo">
+                     <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <div class="nav-item">
+                     <ul>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon1.svg" alt="">サービス管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon2.svg" alt=""><span class="notification-sms">1</span> 受注管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon3.svg" alt="">顧客管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon4.svg" alt="">データ分析</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon5.svg" alt="">売上管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon6.svg" alt="">販促管理</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="nav-right">
+                  <div class="nav-right-switch">
+                     <input type="checkbox" hidden="hidden" id="username">
+                     <label class="switch" for="username"></label>
+                     <a href="#">クライアントモードへの切替</a>
+                  </div>
+                  <div class="nav-right-socal-icon">
+                     <ul class="d-flex">
+                        <li><a href="#" class="search-header-top"><img src="assets/img/search.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon1.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon2.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon3.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-admin.png" alt=""></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-bottom-wrapper">
+               <ul>
+                  <li class="active"><a href="#">サービスを探す</a></li>
+                  <li><a href="#">フリーランスを探す</a></li>
+                  <li><a href="#">アートボード</a></li>
+                  <li><a href="#">ショップ</a></li>
+               </ul>
+               <div class="header-search">
+                  <input type="text" placeholder="キーワードで検索">
+                  <input type="submit">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="right-body-wrapper">
+         <div class="container">
+            <div class="row">
+               <!-- menu -->
+               <div class="col-md-12">
+                  <div class="breadcrumbs-wrapper">
+                     <ul class="d-flex">
+                        <li><a href="#">TOP</a></li>
+                        <li>></li>
+                        <li>受注管理 / 顧客管理</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 side-ber m-t25">
+                  <div class="toggle-backgroung">
+                     <div class="image-close">
+                        <img src="assets/img/close-btn.png" alt="">
+                     </div>
+                  </div>
+
+                  <div class="search-popup-wrap">
+                    <h2 class="m-b10">キーワード検索</h2>
+                    <div class="search-popup-div">
+                        <input type="text" placeholder="購入者・電話番号など">
+                        <button><img src="assets/img/search-icon.svg" alt=""></button>
+                    </div>
+                    <h2 class="m-b6 m-t27">注文期間</h2>
+                    <div class="search-popup-date-wrap">
+                        <div class="search-popup-date m-b25">
+                            <div class="search-popup-date-left"><h3>開始</h3></div>
+                            <div class="search-popup-date-right">
+                                <input type="date">
+                                <img src="assets/img/calendar.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="search-popup-date">
+                            <div class="search-popup-date-left"><h3>開始</h3></div>
+                            <div class="search-popup-date-right">
+                                <input type="date">
+                                <img src="assets/img/calendar.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="m-b18 m-t27">ステータス</h2>
+                    <div class="status-div">
+                        <div class="status-div-row">
+                            <input type=radio id="rdo1" checked class="radio-input" name="radio-group">
+                            <label for="rdo1" class="radio-label" > <span class="radio-border"></span> 未対応 </label>
+                        </div>
+                        
+                        <div class="status-div-row">
+                            <input type=radio id="rdo2"  class="radio-input" name="radio-group">
+                            <label for="rdo2" class="radio-label" ><span class="radio-border"></span>見積り</label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type=radio id="rdo3"  class="radio-input" name="radio-group">
+                            <label for="rdo3" class="radio-label" ><span class="radio-border"></span>入金待ち </label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type=radio id="rdo4"  class="radio-input" name="radio-group">
+                            <label for="rdo4" class="radio-label" ><span class="radio-border"></span>取引中</label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type=radio id="rdo5"  class="radio-input" name="radio-group">
+                            <label for="rdo5" class="radio-label" ><span class="radio-border"></span>完了 </label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type=radio id="rdo6"  class="radio-input" name="radio-group">
+                            <label for="rdo6" class="radio-label" ><span class="radio-border"></span>キャンセル </label>
+                        </div>
+
+                       <div class="btn-red-div">
+                            <a class="btn-red" href="#" >検索する</a>
+                            <p>設定をリセットする</p>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="silde-bar-menu--wrapper">
+                     <div class="silde-bar-menu--info text-center">
+                        <div class="user-address">
+                           <div class="avatar-upload">
+                              <div class="avatar-edit">
+                                 <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                              </div>
+                              <div class="avatar-preview">
+                                 <div id="imagePreview" style="background-image: url(assets/img/user-image.png);">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-left-item">
+                              <p>坂倉　啓太</p>
+                              <label for="imageUpload">プロフィールの編集 <img src="assets/img/edit-blue.png" alt=""></label>
+                           </div>
+                        </div>
+                        <ul class="d-flex admin-item">
+                           <li>販売実績 <span>100件</span></li>
+                           <li>評価 <span class="color-yell"><img src="assets/img/yellow-star.png" alt=""> 4.9 </span>(87)</li>
+                           <li>フォロワー <span>100人</span></li>
+                           <li>フォロー <span>100人</span></li>
+                        </ul>
+                        <div class="ranking-about">
+                           <div class="d-flex">
+                              <img src="assets/img/gold.png" alt="">
+                              <p>ゴールドランク</p>
+                           </div>
+                           <a href="#">ランキングについて</a>
+                        </div>
+                     </div>
+                     <!-- menu -->
+                     <div class="main-manu-sideber">
+                        <p>エージェントメニュー</p>
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item1.svg" alt=""></span> 出品者ダッシュボード</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon1.svg" alt=""></span> サービス管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon2.svg" alt=""></span> 受注管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon3.svg" alt=""></span> 顧客管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon4.svg" alt=""></span> データ分析</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon5.svg" alt=""></span> 売上管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item2.svg" alt=""></span> チャットルーム</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item3.svg" alt=""></span> スケジュール管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon6.svg" alt=""></span> 販促管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item4.svg" alt=""></span> アートルーム管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item5.svg" alt=""></span> ショップ管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item6.svg" alt=""></span> 広告管理</a></li>
+                        </ul>
+                     </div>
+                     <div class="main-manu-sideber m-top-25">
+                        <p>エージェントメニュー</p>
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item1.svg" alt=""></span> 出品者ダッシュボード</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon1.svg" alt=""></span> サービス管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon2.svg" alt=""></span> 受注管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon3.svg" alt=""></span> 顧客管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/manu-love.svg" alt=""></span> お気に入り</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item2.svg" alt=""></span> チャットルーム</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-item3.svg" alt=""></span> スケジュール管理</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/menu-icon6.svg" alt=""></span> 販促管理</a></li>
+                        </ul>
+                     </div>
+                     <div class="nav-right-switch">
+                        <input type="checkbox" hidden="hidden" id="manu">
+                        <label class="switch" for="manu"></label>
+                        <a href="#">クライアントモードへの切替</a>
+                     </div>
+                     <div class="main-manu-sideber manu-admin-section">
+                        <ul>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/setting.svg" alt=""></span> 設定</a></li>
+                           <li><a href="#"><span><img src="assets/img/manu-icon/logout.svg" alt=""></span> ログアウト</a></li>
+                        </ul>
+                     </div>
+                     <!-- menu end -->
+                  </div>
+               </div>
+               <!-- menu end -->
+               <div class="col-lg-8">
+                  <!-- right-side-section -->
+                  <div class="right-section-heading m-b25">
+                     <h4>受注管理</h4>
+                  </div>
+                  <div class="search-popup-wrap-mobile">
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/search-icon-blue.svg" alt="">キーワード検索</a></li>
+                        <li><a href="#"><img src="assets/img/calendar-blue.svg" alt=""> 注文期間</a></li>
+                    </ul>
+
+                    <div class="modal keyword-search-modal" tabindex="-1" role="dialog" id="exampleModal">
+                     <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="search-popup-wrap search-popup-wrap-popup">
+                    <h2 class="m-b10">キーワード検索</h2>
+                    <div class="search-popup-div">
+                        <input type="text" placeholder="購入者・電話番号など">
+                        <button><img src="assets/img/search-icon.svg" alt=""></button>
+                    </div>
+                    <h2 class="m-b6 m-t27">注文期間</h2>
+                    <div class="search-popup-date-wrap">
+                        <div class="search-popup-date m-b25">
+                            <div class="search-popup-date-left"><h3>開始</h3></div>
+                            <div class="search-popup-date-right">
+                                <input type="date">
+                                <img src="assets/img/calendar.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="search-popup-date">
+                            <div class="search-popup-date-left"><h3>開始</h3></div>
+                            <div class="search-popup-date-right">
+                                <input type="date">
+                                <img src="assets/img/calendar.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="m-b18 m-t27">ステータス</h2>
+                    <div class="status-div">
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo1" checked="" class="radio-input" name="radio-group">
+                            <label for="rdo1" class="radio-label"> <span class="radio-border"></span> 未対応 </label>
+                        </div>
+                        
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo2" class="radio-input" name="radio-group">
+                            <label for="rdo2" class="radio-label"><span class="radio-border"></span>見積り</label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo3" class="radio-input" name="radio-group">
+                            <label for="rdo3" class="radio-label"><span class="radio-border"></span>入金待ち </label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo4" class="radio-input" name="radio-group">
+                            <label for="rdo4" class="radio-label"><span class="radio-border"></span>取引中</label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo5" class="radio-input" name="radio-group">
+                            <label for="rdo5" class="radio-label"><span class="radio-border"></span>完了 </label>
+                        </div>
+
+                        <div class="status-div-row">
+                            <input type="radio" id="rdo6" class="radio-input" name="radio-group">
+                            <label for="rdo6" class="radio-label"><span class="radio-border"></span>キャンセル </label>
+                        </div>
+
+                       <div class="btn-red-div">
+                            <a class="btn-red" href="#">検索する</a>
+                            <p>設定をリセットする</p>
+                       </div>
+                    </div>
+                  </div>
+                       </div>
+                     </div>
+                   </div>
+                  </div>
+                  <div class="colm-wrapper-all betting-management-box">
+                    <div class="mobile-display-wrap">
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+
+                     <div class="item-box">
+                        <div class="flex-box">
+                            <h3>坂倉拓郎</h3>
+                            <a href="#" class="btn-red-small">取引中</a>
+                         </div>
+                         <div class="img-text-price-item">
+                             <div class="text-price-img">
+                                 <img src="assets/img/table-image.png" alt="">
+                             </div>
+                             <div class="img-price-text">
+                                 あなたの想いをデザインに<br>
+                                 会社用ロゴ作成します
+                             </div>
+                             <div class="img-text-price">
+                                 30,000 円
+                             </div>
+                         </div>
+                         <div class="flex-box bottom-item">
+                             <p>注文日時：2021/1/11 09:00</p>    <p>完成納期：2021/1/18   09:00</p>
+                         </div>
+                     </div>
+                    </div>
+                    
+                    <div class="dextop-display-wrap">
+                        <div class="betting-management-box-top">
+                           <div class="betting-management-box-top-left">
+                              <input type="date" value="2022/01/01"> <p class="m-r">〜</p> <input type="date" value="2022/01/01"> <img src="assets/img/calendar.svg" alt="">
+                           </div>
+                           <div class="betting-management-box-top-right">
+                              <input type=" text" value="締切が近い順に表示">
+                              <img src="assets/img/icon1.png" alt="">
+                           </div>
+                        </div>
+                        <div class="betting-management-box-bottom-table table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <td>ステータス</td>
+                                    <td>注文者情報</td>
+                                    <td>金額</td>
+                                    <td>注文日時 <br>
+                                       (完成納期)
+                                    </td>
+                                    <td>注文詳細</td>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td><a href="#" class="btn-red-small">取引中</a></td>
+                                    <td>坂倉拓郎</td>
+                                    <td>30,000円</td>
+                                    <td>
+                                       2021/1/11    09:00<br>
+                                       (2021/1/18   09:00)
+                                    </td>
+                                    <td>
+                                       <div class="fle-box">
+                                          <img src="assets/img/table-image.png" alt="">
+                                       <div class="">あなたの想いをデザインに会社用<br>
+                                          ロゴ作成します</div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <a href="javascript:void(0)" class="read-more">その他のお知らせを表示する</a>
+                 </div>
+                  <!-- right-side-section end -->
+                  <!--  -->
+                  <div class="customer-management-section">
+                     <div class="right-section-heading m-b25">
+                        <h4>顧客一覧</h4>
+                     </div>
+                     <div class="search-popup-wrap-mobile">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/search-icon-blue.svg" alt="">顧客情報で検索</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#customer-managementModal"><img src="assets/img/calendar-blue.svg" alt=""> 購入日</a></li>
+                        </ul>
+    
+                        <div class="modal keyword-search-modal" tabindex="-1" id="customer-managementModal" style="display: none;" aria-hidden="true">
+                         <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                               <div class="search-popup-wrap search-popup-wrap-popup">
+                        <h2 class="m-b6">注文期間</h2>
+                        <div class="search-popup-date-wrap">
+                            <div class="search-popup-date m-b25">
+                                <div class="search-popup-date-left"><h3>開始</h3></div>
+                                <div class="search-popup-date-right">
+                                    <input type="date">
+                                    <img src="assets/img/calendar.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="search-popup-date">
+                                <div class="search-popup-date-left"><h3>開始</h3></div>
+                                <div class="search-popup-date-right">
+                                    <input type="date">
+                                    <img src="assets/img/calendar.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                           </div>
+                         </div>
+                       </div>
+                      </div>
+                      <div class="customer-management-box-bottom">
+                        <h3>顧客一覧</h3>
+                        <div class="customer-management-box-bottom-wrap-on__mobile">
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="customer-management-box-bottom-wrap-on__dextop">
+                           <div class="betting-management-box-top">
+                              <div class="betting-management-box-top-left">
+                                 <div class="betting-management-box-top-left-search">
+                                    <input type="text" placeholder="顧客情報で検索">
+                                    <button><img src="assets/img/search-i.svg" alt=""></button>
+                                 </div>
+                              </div>
+                              <div class="betting-management-box-top-right">
+                                 <input type=" text" value="締切が近い順に表示">
+                                 <img src="assets/img/icon1.png" alt="">
+                              </div>
+                           </div>
+
+                           <div class="betting-management-box-bottom-table table-responsive">
+                              <table class="table">
+                                 <thead>
+                                    <tr>
+                                       <td>顧客情報</td>
+                                       <td>購入回数</td>
+                                       <td>キャンセル回数</td>
+                                       <td>最終購入日</td>
+                                       <td>メモ</td>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>1回</td>
+                                       <td>0回</td>
+                                       <td>2022/02/22</td>
+                                       <td>初回クーポン利用</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <a href="javascript:void(0)" class="read-more">その他のお知らせを表示する</a>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!--  -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="fooetr-section">
+               <div class="footer-logo">
+                  <img src="assets/img/footer-logo.png" alt="">
+               </div>
+               <div class="fooetr-top-section">
+                  <div class="main">
+                     <div class="accordion">
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>企業情報</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">NoBelongsについて</a></li>
+                              <li><a href="#">会社概要</a></li>
+                              <li><a href="#">採用情報</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>ご利用の方へ</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>サポート</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">ご利用ガイド</a></li>
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>フリーランス</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">＊＊＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-socal-address">
+                           <h3 class="title">
+                              <span>アプリ</span>
+                           </h3>
+                           <ul class="socal-item">
+                              <li><a href="#"><img src="assets/img/iphon-stor.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/google-stor.png" alt=""></a></li>
+                           </ul>
+                           <ul class="footer-socal-item">
+                              <li><a href="#"><img src="assets/img/footer-icon1.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon2.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon3.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon4.png" alt=""></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="coppyright-wrapper">
+               <ul>
+                  <li><a href="#">ご利用規約</a></li>
+                  <li><a href="#">プライバシーポリシー</a></li>
+                  <li><a href="#">特商法に基づく表記</a></li>
+                  <li><a href="#">資金決済法に基づく表示</a></li>
+                  <li><a href="#">コンプライアンスポリシー</a></li>
+               </ul>
+               <div class="text-center">
+                  <a href="#" class="copptright-titel">©︎2021-2022 NoBelongs</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- -------------------- -->
+      <script src='assets/js/jquery.min.js'></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>

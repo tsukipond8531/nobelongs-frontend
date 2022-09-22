@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="assets/img/favicon.svg" type="image/x-icon" />
+      <title>No Belongs</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="assets/css/slick.css" rel="stylesheet">
+      <link href="assets/css/slick-theme.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="nav-top-wrapper">
+               <div class="nav-left-wrapper d-flex">
+                  <div class="btn-toggle">
+                     <img src="assets/img/hamburger.png" alt="">
+                  </div>
+                  <div class="logo">
+                     <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <div class="nav-item">
+                     <ul>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon1.svg" alt="">サービス管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon2.svg" alt=""><span class="notification-sms">1</span> 受注管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon3.svg" alt="">顧客管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon4.svg" alt="">データ分析</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon5.svg" alt="">売上管理</a></li>
+                        <li><a href="#"><img src="assets/img/manu-icon/menu-icon6.svg" alt="">販促管理</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="nav-right">
+                  <div class="nav-right-switch">
+                     <input type="checkbox" hidden="hidden" id="username">
+                     <label class="switch" for="username"></label>
+                     <a href="#">クライアントモードへの切替</a>
+                  </div>
+                  <div class="nav-right-socal-icon">
+                     <ul class="d-flex">
+                        <li><a href="#" class="search-header-top"><img src="assets/img/search.png" alt=""></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon1.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon2.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-icon3.png" alt=""><span class="notification-sms">1</span></a></li>
+                        <li><a href="#"><img src="assets/img/nav-right-socal-admin.png" alt=""></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="nav-bottom-wrapper">
+               <ul>
+                  <li class="active"><a href="#">サービスを探す</a></li>
+                  <li><a href="#">フリーランスを探す</a></li>
+                  <li><a href="#">アートボード</a></li>
+                  <li><a href="#">ショップ</a></li>
+               </ul>
+               <div class="header-search">
+                  <input type="text" placeholder="キーワードで検索">
+                  <input type="submit">
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="right-body-wrapper">
+         <div class="container">
+            <div class="row">
+               <!-- menu -->
+               <div class="col-md-12">
+                  <div class="breadcrumbs-wrapper customer-management">
+                     <ul class="d-flex">
+                        <li><a href="#">TOP</a></li>
+                        <li class="mobile-none">></li>
+                        <li class="mobile-none"><a href="#">サービス管理</a></li>
+                        <li>></li>
+                        <li>顧客管理</li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- menu end -->
+               <div class="col-lg-12">
+                  <!--  -->
+                  <div class="customer-management-section">
+                     <div class="right-section-heading m-b25 customer-management">
+                        <h4>顧客管理</h4>
+                     </div>
+                     <div class="search-popup-wrap-mobile">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/search-icon-blue.svg" alt=""> 顧客情報で検索</a></li>
+                            <li><a href="#" class="button"><img src="assets/img/calendar-blue.svg" alt=""> 購入日</a></li>
+                        </ul>
+                        <div class="banner">
+                            <div class="search-popup-wrap search-popup-wrap-popup">
+                                <h2 class="m-b6">購入日</h2>
+                                <div class="search-popup-date-wrap">
+                                    <div class="search-popup-date m-b25">
+                                        <div class="search-popup-date-left"><h3>開始</h3></div>
+                                        <div class="search-popup-date-right">
+                                            <input type="date">
+                                            <img src="assets/img/calendar.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="search-popup-date">
+                                        <div class="search-popup-date-left"><h3>終了</h3></div>
+                                        <div class="search-popup-date-right">
+                                            <input type="date">
+                                            <img src="assets/img/calendar.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="btn-red-div">
+                                        <a class="btn-red" href="#">検索する</a>
+                                        <p>設定をリセットする</p>
+                                   </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="customer-management-box-bottom">
+                        <div class="customer-management-box-bottom-wrap-on__mobile">
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="customer-management-box-bottom-item">
+                              <div class="customer-management-box-bottom-item-left">
+                                 <img src="assets/img/img.png" alt="">
+                                 <p>けいとぅー</p>
+                              </div>
+                              <div class="customer-management-box-bottom-item-right">
+                                 <p>購入回数：1回 キャンセル回数：0回
+                                    <span>最終購入日：2022/02/22</span>
+                                    メモ：初回クーポン利用
+                                 </p>
+                              </div>
+                           </div>
+                           <a href="javascript:void(0)" class="read-more">その他のお知らせを表示する</a>
+                        </div>
+                        <div class="customer-management-box-bottom-wrap-on__dextop customer-management">
+                           <div class="betting-management-box-top">
+                              <div class="betting-management-box-top-left">
+                                 <div class="betting-management-box-top-left-search customer-management">
+                                    <input type="text" placeholder="顧客情報で検索">
+                                    <button><img src="assets/img/search-i.svg" alt=""></button>
+                                 </div>
+                              </div>
+                              <div class="betting-management-box-top-right select">
+                                 <p>絞り込み</p>
+                                 <select>
+                                    <option value="最新購入日が新しい順">最新購入日が新しい順</option>
+                                 </select>
+                              </div>
+                           </div>
+
+                           <div class="betting-management-box-bottom-table table-responsive">
+                              <table class="table">
+                                 <thead>
+                                    <tr>
+                                       <td>クライアント名</td>
+                                       <td>サービス名</td>
+                                       <td>取引金額</td>
+                                       <td>オプション</td>
+                                       <td>取引開始日</td>
+                                       <td>取引完了日</td>
+                                       <td>メモ</td>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="flex-box">
+                                             <img src="assets/img/img.png" alt="">
+                                             <p>けいとぅー</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                        <div class="fle-box">
+                                            <img src="assets/img/table-image.png" alt="">
+                                            <div class="">あなたの想いをオリジナル<br>
+                                                ソングにします。</div>
+                                            </div>
+                                       </td>
+                                       <td>10,000円</td>
+                                       <td>10,000円</td>
+                                       <td>2022/8/30</td>
+                                       <td>2022/9/5</td>
+                                       <td>15％OFFクーポン発行</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              
+
+                              <div class="pagination-item pagination-management">
+                                <ul>
+                                   <li class="active"><a href="#">1</a></li>
+                                   <li><a href="#">2</a></li>
+                                   <li><a href="#">3</a></li>
+                                   <li><a href="#">4</a></li>
+                                   <li><a href="#">5</a></li>
+                                   <li><a href="#">6</a></li>
+                                   <li><a href="#">7</a></li>
+                                   <li><a href="#">8</a></li>
+                                   <li><a href="#">9</a></li>
+                                   <li><a href="#">10</a></li>
+                                   <li><a href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!--  -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="fooetr-section">
+               <div class="footer-logo">
+                  <img src="assets/img/footer-logo.png" alt="">
+               </div>
+               <div class="fooetr-top-section">
+                  <div class="main">
+                     <div class="accordion">
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>企業情報</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">NoBelongsについて</a></li>
+                              <li><a href="#">会社概要</a></li>
+                              <li><a href="#">採用情報</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>ご利用の方へ</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                              <li><a href="#">よくある質問</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>サポート</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">初めての方へ</a></li>
+                              <li><a href="#">ご利用ガイド</a></li>
+                              <li><a href="#">サービスルール</a></li>
+                              <li><a href="#">クライアントの方へ</a></li>
+                              <li><a href="#">ホストの方へ</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-item">
+                           <h3 class="title">
+                              <span>フリーランス</span>
+                              <i class="fas fa-chevron-down"></i>
+                           </h3>
+                           <ul class="paragraph">
+                              <li><a href="#">＊＊＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊＊</a></li>
+                              <li><a href="#">＊＊＊＊＊＊＊</a></li>
+                           </ul>
+                        </div>
+                        <div class="accordion-socal-address">
+                           <h3 class="title">
+                              <span>アプリ</span>
+                           </h3>
+                           <ul class="socal-item">
+                              <li><a href="#"><img src="assets/img/iphon-stor.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/google-stor.png" alt=""></a></li>
+                           </ul>
+                           <ul class="footer-socal-item">
+                              <li><a href="#"><img src="assets/img/footer-icon1.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon2.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon3.png" alt=""></a></li>
+                              <li><a href="#"><img src="assets/img/footer-icon4.png" alt=""></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="coppyright-wrapper">
+               <ul>
+                  <li><a href="#">ご利用規約</a></li>
+                  <li><a href="#">プライバシーポリシー</a></li>
+                  <li><a href="#">特商法に基づく表記</a></li>
+                  <li><a href="#">資金決済法に基づく表示</a></li>
+                  <li><a href="#">コンプライアンスポリシー</a></li>
+               </ul>
+               <div class="text-center">
+                  <a href="#" class="copptright-titel">©︎2021-2022 NoBelongs</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- -------------------- -->
+      <script src='assets/js/jquery.min.js'></script>
+      <script src="assets/js/slick.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
